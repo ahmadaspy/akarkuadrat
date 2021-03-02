@@ -133,21 +133,21 @@
     <!-- Bootstrap core JavaScript-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
-    <script src="{{ asset('assets/vendor/jquery/jquery.min.js') }}"></script>
-    <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{secure_asset('assets/vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{secure_asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="{{ asset('assets/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
+    <script src="{{secure_asset('assets/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="{{ asset('assets/js/sb-admin-2.min.js') }}"></script>
+    <script src="{{secure_asset('assets/js/sb-admin-2.min.js') }}"></script>
 
     <!-- Page level plugins -->
-    <script src="{{ asset('assets/vendor/chart.js/Chart.min.js') }}"></script>
+    <script src="{{secure_asset('assets/vendor/chart.js/Chart.min.js') }}"></script>
 
     <!-- Page level custom scripts -->
-    <script src="{{ asset('assets/js/demo/chart-area-demo.js') }}"></script>
-    <script src="{{ asset('assets/js/demo/chart-pie-demo.js') }}"></script>
+    <script src="{{secure_asset('assets/js/demo/chart-area-demo.js') }}"></script>
+    <script src="{{secure_asset('assets/js/demo/chart-pie-demo.js') }}"></script>
 
     @yield('scriptbawah')
 </body>
