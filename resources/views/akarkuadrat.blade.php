@@ -113,11 +113,14 @@
             console.log(x1);
             var x2 = (minb - akar)/tiga;
             console.log(x2);
-            if(x1 == null || x2 == null){
+            if(isNaN(x1) || isNaN(x2)){
                 document.getElementById("myform").reset();
+                alert("x1 dan x2 bernilai nan");
+            }else{
+                document.getElementById("x1").value = x1;
+                document.getElementById("x2").value = x2;
             }
-            document.getElementById("x1").value = x1;
-            document.getElementById("x2").value = x2;
+
 
         }
     </script>
