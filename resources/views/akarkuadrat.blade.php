@@ -41,7 +41,7 @@
     </div>
     <div class="card-body">
 
-        <form action="{{ route('input')}}" method="POST">
+        <form action="{{ route('input')}}" method="POST" id="myform">
             @csrf
             <div class="form-group row">
               <label for="nama" class="col-sm-2 col-form-label">Nama</label>
@@ -113,6 +113,9 @@
             console.log(x1);
             var x2 = (minb - akar)/tiga;
             console.log(x2);
+            if(x1 == null || x2 == null){
+                document.getElementById("myform").reset();
+            }
             document.getElementById("x1").value = x1;
             document.getElementById("x2").value = x2;
 

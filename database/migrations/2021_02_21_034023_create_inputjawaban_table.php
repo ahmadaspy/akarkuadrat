@@ -19,8 +19,8 @@ class CreateInputjawabanTable extends Migration
             $table->double('a');
             $table->double('b');
             $table->double('c');
-            $table->double('x1');
-            $table->double('x2');
+            $table->double('x1')->nullable();
+            $table->double('x2')->nullable();
             $table->timestamps();
         });
     }
